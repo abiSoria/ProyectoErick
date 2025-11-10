@@ -20,7 +20,7 @@ app.use('/api/persons', personsRouter);
 
 const allowedOrigins = [
     'http://localhost:5173', // Para tu prueba local de Vite
-    'https://nombredetuproyecto.netlify.app' // ¡EL DOMINIO DE TU FRONTEND DESPLEGADO!
+    'https://silver-narwhal-a19886.netlify.app/' // ¡EL DOMINIO DE TU FRONTEND DESPLEGADO!
 ];
 
 app.use(cors({
