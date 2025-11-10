@@ -1,18 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>Gestión de Personas</title>
 
-    <link rel="stylesheet" href="/bootstrap.min.css"> 
+    <!-- ✅ Bootstrap 5 desde CDN (no local) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1HiPT/1wIhCkI1MjVtL+FZC+NcPb1dKGj7Sk" 
+      crossorigin="anonymous"
+    >
 
-</head>
-<body>
-    <div id="app"></div> 
-    
+    <!-- Opcional: favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <h1 class="text-center mb-4">Gestión de Personas</h1>
+
+      <!-- 🔹 Este div es donde renderiza Vite -->
+      <div id="app"></div>
+    </div>
+
+    <!-- ✅ Importante: script con ruta relativa -->
     <script type="module" src="/src/main.js"></script>
-    
-    </body>
+  </body>
 </html>
