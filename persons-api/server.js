@@ -5,8 +5,16 @@ const cors = require('cors');
 const personsRouter = require('./routers/persons');
 
 const app = express();
-app.use(cors());
 app.use(express.json());
+
+// Ruta de bienvenida o estado del servidor
+app.get('/', (req, res) => {
+    res.json({ 
+        message: 'Welcome to the Persons API!', 
+        status: 'Online',
+        endpoints: '/api/persons'
+    });
+});
 
 app.use('/api/persons', personsRouter);
 
